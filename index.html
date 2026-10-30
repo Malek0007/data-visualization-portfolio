@@ -7849,7 +7849,607 @@ within each group gives the higher-impact share.</p>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Columns:
+['ID', 'Source', 'Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Description', 'Street', 'City', 'County', 'State', 'Zipcode', 'Country', 'Timezone', 'Airport_Code', 'Weather_Timestamp', 'Temperature(F)', 'Wind_Chill(F)', 'Humidity(%)', 'Pressure(in)', 'Visibility(mi)', 'Wind_Direction', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Amenity', 'Bump', 'Crossing', 'Give_Way', 'Junction', 'No_Exit', 'Railway', 'Roundabout', 'Station', 'Stop', 'Traffic_Calming', 'Traffic_Signal', 'Turning_Loop', 'Sunrise_Sunset', 'Civil_Twilight', 'Nautical_Twilight', 'Astronomical_Twilight']
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>ID</th>
+<th>Source</th>
+<th>Severity</th>
+<th>Start_Time</th>
+<th>End_Time</th>
+<th>Start_Lat</th>
+<th>Start_Lng</th>
+<th>End_Lat</th>
+<th>End_Lng</th>
+<th>Distance(mi)</th>
+<th>...</th>
+<th>Roundabout</th>
+<th>Station</th>
+<th>Stop</th>
+<th>Traffic_Calming</th>
+<th>Traffic_Signal</th>
+<th>Turning_Loop</th>
+<th>Sunrise_Sunset</th>
+<th>Civil_Twilight</th>
+<th>Nautical_Twilight</th>
+<th>Astronomical_Twilight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>A-1</td>
+<td>Source2</td>
+<td>3</td>
+<td>2016-02-08 05:46:00</td>
+<td>2016-02-08 11:00:00</td>
+<td>39.865147</td>
+<td>-84.058723</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.01</td>
+<td>...</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>Night</td>
+<td>Night</td>
+<td>Night</td>
+<td>Night</td>
+</tr>
+<tr>
+<th>1</th>
+<td>A-2</td>
+<td>Source2</td>
+<td>2</td>
+<td>2016-02-08 06:07:59</td>
+<td>2016-02-08 06:37:59</td>
+<td>39.928059</td>
+<td>-82.831184</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.01</td>
+<td>...</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>Night</td>
+<td>Night</td>
+<td>Night</td>
+<td>Day</td>
+</tr>
+<tr>
+<th>2</th>
+<td>A-3</td>
+<td>Source2</td>
+<td>2</td>
+<td>2016-02-08 06:49:27</td>
+<td>2016-02-08 07:19:27</td>
+<td>39.063148</td>
+<td>-84.032608</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.01</td>
+<td>...</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>Night</td>
+<td>Night</td>
+<td>Day</td>
+<td>Day</td>
+</tr>
+<tr>
+<th>3</th>
+<td>A-4</td>
+<td>Source2</td>
+<td>3</td>
+<td>2016-02-08 07:23:34</td>
+<td>2016-02-08 07:53:34</td>
+<td>39.747753</td>
+<td>-84.205582</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.01</td>
+<td>...</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>Night</td>
+<td>Day</td>
+<td>Day</td>
+<td>Day</td>
+</tr>
+<tr>
+<th>4</th>
+<td>A-5</td>
+<td>Source2</td>
+<td>2</td>
+<td>2016-02-08 07:39:07</td>
+<td>2016-02-08 08:09:07</td>
+<td>39.627781</td>
+<td>-84.188354</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.01</td>
+<td>...</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>Day</td>
+<td>Day</td>
+<td>Day</td>
+<td>Day</td>
+</tr>
+</tbody>
+</table>
+<p>5 rows × 46 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=7d4d5d14">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Recorded accidents</th>
+</tr>
+<tr>
+<th>Year</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>2016</th>
+<td>410821</td>
+</tr>
+<tr>
+<th>2017</th>
+<td>718093</td>
+</tr>
+<tr>
+<th>2018</th>
+<td>893426</td>
+</tr>
+<tr>
+<th>2019</th>
+<td>954303</td>
+</tr>
+<tr>
+<th>2020</th>
+<td>1178913</td>
+</tr>
+<tr>
+<th>2021</th>
+<td>1563753</td>
+</tr>
+<tr>
+<th>2022</th>
+<td>1762452</td>
+</tr>
+<tr>
+<th>2023</th>
+<td>246633</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Records without a readable year: 0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=14059522">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2022 records: 1,762,452
+
+Missing values (%):
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Missing (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>ID</th>
+<td>0.00</td>
+</tr>
+<tr>
+<th>Source</th>
+<td>0.00</td>
+</tr>
+<tr>
+<th>Severity</th>
+<td>0.00</td>
+</tr>
+<tr>
+<th>Start_Time</th>
+<td>0.00</td>
+</tr>
+<tr>
+<th>Start_Lat</th>
+<td>0.00</td>
+</tr>
+<tr>
+<th>Start_Lng</th>
+<td>0.00</td>
+</tr>
+<tr>
+<th>State</th>
+<td>0.00</td>
+</tr>
+<tr>
+<th>Weather_Condition</th>
+<td>2.20</td>
+</tr>
+<tr>
+<th>Sunrise_Sunset</th>
+<td>0.85</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Records by month:
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Recorded accidents</th>
+</tr>
+<tr>
+<th>Month</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1</th>
+<td>135900</td>
+</tr>
+<tr>
+<th>2</th>
+<td>163839</td>
+</tr>
+<tr>
+<th>3</th>
+<td>140145</td>
+</tr>
+<tr>
+<th>4</th>
+<td>196687</td>
+</tr>
+<tr>
+<th>5</th>
+<td>159566</td>
+</tr>
+<tr>
+<th>6</th>
+<td>129264</td>
+</tr>
+<tr>
+<th>7</th>
+<td>140672</td>
+</tr>
+<tr>
+<th>8</th>
+<td>152361</td>
+</tr>
+<tr>
+<th>9</th>
+<td>139016</td>
+</tr>
+<tr>
+<th>10</th>
+<td>85135</td>
+</tr>
+<tr>
+<th>11</th>
+<td>130959</td>
+</tr>
+<tr>
+<th>12</th>
+<td>188908</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Severity counts:
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Severity
+1      37875
+2    1603346
+3      77957
+4      43274
+Name: count, dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=a95c5533">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Duplicate IDs: 0
+
+Records by source:
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Source
+Source1    1526270
+Source2     219411
+Source3      16771
+Name: count, dtype: int64</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Most common weather conditions:
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Weather_Condition
+Fair                       865666
+Mostly Cloudy              228345
+Cloudy                     224584
+Partly Cloudy              159362
+Light Rain                  67729
+Light Snow                  33127
+Fog                         22167
+Rain                        16291
+Fair / Windy                12686
+Haze                        11510
+Thunder in the Vicinity      7560
+Heavy Rain                   6867
+T-Storm                      5892
+Thunder                      5860
+Mostly Cloudy / Windy        5688
+Cloudy / Windy               5448
+Light Rain with Thunder      5171
+Snow                         4824
+Wintry Mix                   3955
+Light Drizzle                3716
+Name: count, dtype: int64</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Records by state:
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>State
+CA    375913
+FL    263119
+VA     99311
+TX     95509
+NY     94765
+SC     84880
+PA     80839
+NC     72167
+NJ     42244
+AZ     39423
+TN     38910
+MN     38354
+MD     37379
+LA     33770
+GA     33129
+OR     30127
+MI     28975
+OH     25746
+IL     24610
+CO     20930
+CT     20171
+AL     20054
+MO     19841
+UT     17439
+WA     15416
+IN     14499
+MT     14072
+AR      9432
+OK      8969
+WI      8078
+DC      6959
+KS      6525
+MA      6281
+WV      5344
+IA      4891
+NV      4286
+MS      3483
+DE      3088
+KY      2713
+ID      2264
+WY      2075
+RI      1601
+NE      1478
+NM      1413
+ND      1288
+NH       508
+ME       109
+VT        38
+SD        37
+Name: count, dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=c7cedf02">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Total recorded accidents: 1,762,452
+Higher-impact accidents: 121,231
+Higher-impact percentage: 6.88%
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8e70ff21">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="1.-Time:-when-is-higher-traffic-impact-more-common?">1. Time: when is higher traffic impact more common?<a class="anchor-link" href="#1.-Time:-when-is-higher-traffic-impact-more-common?">¶</a></h2><p>The heatmap compares the share of severity 3–4 accidents across
 weekdays and hours. Orange indicates a share above the overall
 6.88%, while blue indicates a share below it. Color intensity
@@ -7857,7 +8457,6 @@ shows the difference in percentage points.</p>
 <p>A heatmap makes recurring patterns across all seven days and
 24 hours visible together. Hovering reveals each group's
 record count and higher-impact percentage.</p>
-</div>
 </div>
 </div>
 </div>
